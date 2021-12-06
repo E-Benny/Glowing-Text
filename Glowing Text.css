@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(to top right, #9933ff -1%, #ffffff 100%);
+    height: 100vh;
+    font-family: 'Bubblegum Sans', cursive;
+  }
+  
+  .glow {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 103px;
+    color: white;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    top: 100px;
+    bottom: 100px;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4f33af, 0 0 40px #4f33af, 0 0 50px #4f33af, 0 0 60px #4f33af, 0 0 70px #4f33af;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #3c3197, 0 0 40px #3c3197, 0 0 50px #3c3197, 0 0 60px #3c3197, 0 0 70px #3c3197, 0 0 80px #3c3197;
+    }
+  }
